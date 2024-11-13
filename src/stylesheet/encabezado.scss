@@ -1,0 +1,46 @@
+.encabezados {
+    border: 1px solid;
+    padding: 10px;
+}
+
+.primer-encabezado {
+    display: flex;
+    justify-content: space-around;
+
+    .container-btns {
+        border: 1px solid;
+        cursor: pointer;
+    }
+
+    .current-temp-container {
+        display: flex;
+        align-self: center;
+
+        .temp {
+            font-size: 35px;
+        }
+    }
+
+    .input-search-container {
+        padding: 5px 14px;
+        padding: 10px;
+        border-radius: 22px;
+        min-width: 250px;
+        max-width: 500px;
+        background-color: red;
+
+        position: relative;
+
+        div {
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+
+            input {
+                border-radius: 7px;
+                outline: none;
+                border: none;
+            }
+        }
+    }
+}
