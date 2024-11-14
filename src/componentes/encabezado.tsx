@@ -1,4 +1,5 @@
 import '../stylesheet/encabezado.scss';
+import { DetallesConIconos } from './detallesconiconos';
 
 export const Encabezado = () => {
 
@@ -15,8 +16,8 @@ export const Encabezado = () => {
         {/*TEMP ACTUAL*/}
 
         <div className="current-temp-container">
-          <p className='temp'>15°</p>
-          <div>
+          <p className='temp font-google-delgada'>15°</p>
+          <div className='font-google'>
             <p>C</p>
             <p>F</p>
           </div>
@@ -24,13 +25,13 @@ export const Encabezado = () => {
 
         { /*CIUDAD, CIELO, MAS DATOS DEL CLIMA ACTUAL*/ }
         
-        <div>
-          <p>Delegacion plyas de Tijuana Baja California MX</p>
-          <p>clearSky 0%</p>
-          <div>
-            <p>Sensacion termica<span>14°</span></p>
-            <p>Temperatura min<span>14°</span></p>
-            <p>Temperatura max<span>16°</span></p>
+        <div className='localidad-mas-detalles'>
+          <p className='localidad font-google'>Delegacion plyas de Tijuana Baja California MX</p>
+          <p className='descripcion-del-cielo font-google-delgada'>clearSky 0%</p>
+          <div className='detalles'>
+            <p className='font-google-delgada'>Sensacion termica<span className='font-google'>14°</span></p>
+            <p className='font-google-delgada'>Temperatura min<span className='font-google'>14°</span></p>
+            <p className='font-google-delgada'>Temperatura max<span className='font-google'>16°</span></p>
           </div>
         </div>
 
@@ -48,6 +49,7 @@ export const Encabezado = () => {
 
       </div>
 
+      <DetallesConIconos />
       
     </section>
   )
