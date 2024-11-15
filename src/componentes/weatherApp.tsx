@@ -1,5 +1,6 @@
 import { DetallesConIconos } from './detallesconiconos';
 import { CartaInfo } from './cartas';
+import { Molinos } from './molinos';
 import '../stylesheet/weatherApp.scss';
 
 
@@ -65,10 +66,15 @@ export const WeatherApp = () => {
           </div>
           <div className='viento-y-sol'>
             <div className='viento-container'>
-              <div className='molinos'>
+              <Molinos />
+              <div className='detalles-del-viento'>
                 <div>
-                  <img src="https://s.yimg.com/os/weather/1.0.1/windmill/blade_big@2x.png" alt="aspas de molino" />
-                  <img src="https://s.yimg.com/os/weather/1.0.1/windmill/bigpole@2x.png" alt="poste de molino" />
+                  <p>Velocidad del viento:</p>
+                  <p>7K/H</p>
+                </div>
+                <div>
+                  <p>Direccion del viento:</p>
+                  <p>290°</p>
                 </div>
               </div>
             </div>
