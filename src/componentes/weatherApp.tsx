@@ -1,4 +1,5 @@
 import { DetallesConIconos } from './detallesconiconos';
+import { CartaInfo } from './cartas';
 import '../stylesheet/weatherApp.scss';
 
 
@@ -44,7 +45,7 @@ export const WeatherApp = () => {
                 <i className="bi bi-search"></i>
                 <input />
               </div>
-              <ul>
+              <ul className='sugerencias-container'>
 
               </ul>
             </div>
@@ -53,9 +54,26 @@ export const WeatherApp = () => {
 
           <DetallesConIconos />
         </section>
-        <section>
-          <div className='cartas-de-dias'>
-            
+        <section className='seccion-tablas'>
+          <div className='cartas-y-pronostico'>
+            <div className='cartas-de-dias'>
+              <CartaInfo />
+            </div>
+            <div className='pronostico-del-dia-seleccionado'>
+
+            </div>
+          </div>
+          <div className='viento-y-sol'>
+            <div className='viento-container'>
+              <div className='molinos'>
+                <div>
+                  <img src="https://s.yimg.com/os/weather/1.0.1/windmill/blade_big@2x.png" alt="aspas de molino" />
+                  <img src="https://s.yimg.com/os/weather/1.0.1/windmill/bigpole@2x.png" alt="poste de molino" />
+                </div>
+              </div>
+            </div>
+            <div className='sol-container'>
+            </div>
           </div>
 
         </section>
