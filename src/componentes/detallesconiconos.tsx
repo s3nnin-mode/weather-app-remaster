@@ -1,4 +1,4 @@
-import '../stylesheet/encabezado.scss';
+import '../stylesheet/weatherApp.scss';
 
 interface Props {
   data: string;

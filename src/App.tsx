@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.scss';
 
-import { Encabezado } from './componentes/encabezado';
+import { WeatherApp } from './componentes/weatherApp';
 
 function App() {
   return (
-    <div className='App container-fluid'>
-      <Encabezado />
-    </div>
+    <WeatherApp />
   );
 }
 
